@@ -41,15 +41,7 @@ resource "aws_subnet" "private-sub" {
   }
 }
 
-# S3 Bucket
-resource "aws_s3_bucket" "s3" {
-  bucket = "my-tf-test-bucket-2404"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
 
 # S3 Bucket
 resource "aws_s3_bucket" "s3-2" {
